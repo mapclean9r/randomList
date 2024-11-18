@@ -1,17 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        randomList<String> c = new randomList<>();
+        GambleList<String> c = new GambleList<>();
 
-        c.add("egg");
-        c.add("soap");
-        c.add("ion");
-        c.add("dean");
+        c.add("egg").add("soap").add("ion").add("dean").printListForm();
 
-        c.printListForm();
-        System.out.print("\n");
-
-        System.out.println(c.pick());
+        System.out.println("Your Roll: " + c.roll());
 
         c.printListForm();
     }
